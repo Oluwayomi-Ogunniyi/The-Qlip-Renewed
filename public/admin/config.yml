@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: ceo180/theqlip_demo
+  branch: main
+  
+media_folder: "public/content/images"
+public_folder: "/content/images"
+
+collections:
+  - name: "insights"
+    label: "Insights"
+    folder: "public/content/insights"
+    create: true
+    slug: "{{slug}}"
+    format: "json"
+    fields:
+      - {label: "ID (Unique URL slug)", name: "id", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["CYBERSECURITY", "SOFTWARE ARCHITECTURE", "ARTIFICIAL INTELLIGENCE", "BUSINESS INTEL"]}
+      - {label: "Read Time", name: "readTime", widget: "string", default: "5 MIN READ"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Body (Content)", name: "body", widget: "markdown"}
