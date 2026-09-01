@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Generated at build time by scripts/prerender.mjs — the Sitemap line below is appended
+# to the deployed copy in dist/robots.txt with the correct production URL.
+
+Sitemap: https://theqlip.com/sitemap.xml

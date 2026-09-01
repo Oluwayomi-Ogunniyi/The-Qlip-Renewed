@@ -1,0 +1,10 @@
+{
+  "id": "architecting-scalable-microservices",
+  "title": "Architecting Scalable Microservices for High-Traffic Platforms",
+  "category": "SOFTWARE ARCHITECTURE",
+  "date": "2026-07-18T00:00:00.000Z",
+  "readTime": "8 min read",
+  "image": "/images/portfolio_1.png",
+  "excerpt": "Microservices aren't a magic bullet. They just replace one big problem with a dozen small, highly complex ones. Here is how to keep them from crashing.",
+  "body": "## Beyond the Monolith\n\nTeams often rush to microservices expecting infinite scale. Instead, they usually end up with a distributed monolith that breaks in spectacular, unpredictable ways.\n\n### The Cascading Failure Problem\n\nIf Service A calls Service B, and Service B is slow, Service A hangs. Before long, Service A runs out of threads and crashes, taking down Service C with it. This is a cascading failure.\n\n### Defensive Architecture\n\n- **Circuit Breakers:** When a downstream service gets slow, the circuit trips. Service A immediately returns an error instead of waiting and hanging the system.\n- **Bulkheads:** Isolate critical resources. If one feature gets hammered with traffic, it shouldn't take down the checkout system.\n- **Event-Driven Asynchrony:** Stop making synchronous HTTP calls everywhere. Use message brokers to fire events and move on.\n\nGood engineering expects failure. At The Qlip, we build systems that degrade gracefully rather than crash catastrophically."
+}

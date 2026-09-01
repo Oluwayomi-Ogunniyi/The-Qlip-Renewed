@@ -1,0 +1,5 @@
+# SPA fallback for Netlify / Cloudflare Pages / Vercel.
+# Existing prerendered files (e.g. /insights/zero-trust-architecture-2026/index.html)
+# are served directly; every other path falls back to the prerendered SPA shell,
+# which the client-side router hydrates into the correct route.
+/*    /index.html   200

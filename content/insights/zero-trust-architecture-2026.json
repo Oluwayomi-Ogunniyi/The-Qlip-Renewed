@@ -1,0 +1,10 @@
+{
+  "id": "zero-trust-architecture-2026",
+  "title": "Zero-Trust Architecture: Hardening Enterprise Systems in 2026",
+  "category": "CYBERSECURITY",
+  "date": "2026-07-24T00:00:00.000Z",
+  "readTime": "6 min read",
+  "image": "/images/portfolio_4.png",
+  "excerpt": "Perimeter security is dead. Here is how we build zero-trust networks that assume every request is hostile.",
+  "body": "## The End of the Perimeter\n\nFor years, enterprise security relied on a simple concept: trust everyone inside the network, and block everyone outside. That model is broken. With distributed teams and cloud-native deployments, the \"perimeter\" no longer exists.\n\n### What is Zero-Trust?\n\nZero-Trust operates on a singular rule: **never trust, always verify.** Every request, whether it comes from a remote laptop or an internal microservice, must be authenticated and authorized before access is granted.\n\n### How We Do It\n\n- **Microsegmentation:** Break the network into isolated zones. If a breach happens, the attacker has nowhere to go.\n- **Identity-Aware Proxies:** Tie access controls directly to user identity and device health, not just IP addresses.\n- **Hostile Monitoring:** We assume the network is already compromised and monitor traffic for lateral movement.\n\nAt The Qlip, we rip out outdated VPNs and replace them with zero-trust frameworks. It takes careful engineering, but the result is an infrastructure that simply ignores attacks."
+}

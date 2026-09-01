@@ -1,0 +1,10 @@
+{
+  "id": "local-llms-privacy-first-ai",
+  "title": "Implementing Local LLMs: Privacy-First AI for Enterprise Data",
+  "category": "ARTIFICIAL INTELLIGENCE",
+  "date": "2026-07-10T00:00:00.000Z",
+  "readTime": "5 min read",
+  "image": "/images/portfolio_3.png",
+  "excerpt": "Sending corporate data to third-party APIs is a massive security risk. We run highly capable models on-premise, keeping data strictly inside the firewall.",
+  "body": "## The Data Privacy Dilemma\n\nGenerative AI is a massive productivity multiplier, but if you are handling proprietary IP or healthcare records, you cannot just paste them into a public API. It violates compliance, and it is terrible security hygiene.\n\n### The Rise of Local Models\n\nOpen-weights models have reached the point where they are good enough for most enterprise tasks. By quantizing them, we can run them blazingly fast on standard hardware—no massive GPU clusters required.\n\n### How We Deploy\n\nWe deploy optimized inference servers entirely within a client's VPC. The data never leaves the network.\n\n- **RAG (Retrieval-Augmented Generation):** We connect local LLMs to secure vector databases, giving the AI context over company documents without exposing those documents to the internet.\n- **Targeted Fine-Tuning:** Instead of relying on massive general models, we fine-tune smaller, faster models on specific tasks—like parsing messy technical logs.\n\nThe future of enterprise AI isn't a single god-model in the cloud. It is small, highly secure, specialized models running locally."
+}
