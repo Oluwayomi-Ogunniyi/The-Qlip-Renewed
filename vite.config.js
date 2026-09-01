@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
-    base: '/The-Qlip-Renewed/',   // ← (important for GitHub Pages)
+    base: '/',   // ← (important for GitHub Pages)
 
     build: {
       chunkSizeWarningLimit: 700, // three.js vendor chunk is intentionally large
