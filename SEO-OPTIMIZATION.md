@@ -1,6 +1,6 @@
 # What I Changed for SEO
 
-This document explains the SEO work I did on The Qlip website in simple terms.
+This document explains the SEO work I did on The Qlip Digital website in simple terms.
 
 ## The big problem I fixed
 
@@ -20,7 +20,7 @@ every page from top to bottom, just like a visitor's browser does.
 
 Each page (Home, About, Work, Insights, and all 6 services) now has:
 - A **page title** that describes what the page is for (e.g. "Software Engineering
-  Services — System Architecture & APIs | The Qlip").
+  Services — System Architecture & APIs | The Qlip Digital").
 - A **short description** that search engines show under the link in results.
 - A **canonical link**, which tells Google "this is the official address of this
   page" so it doesn't get confused by duplicate copies.
@@ -69,9 +69,9 @@ deep links (like a shared article) even without a trailing slash.
 ## One important thing YOU need to do
 
 The site's real web address (domain) is currently set to a placeholder:
-`https://theqlip.com`.
+`https://theqlipdigital.com`.
 
 Inside the `.env` file there is a line:
 
 ```env
-VITE_SITE_URL=https://theqlip.com
+VITE_SITE_URL=https://theqlipdigital.com
